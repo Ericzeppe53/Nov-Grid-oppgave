@@ -5,50 +5,93 @@
 }
 
 body {
-    font-family: "Karla", sans-serif;
-    font-size:  16px;
-    min-height: 100vh; 
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(210, 46%, 84%);
     display: flex;
-    align-items:center
-}
-
-.join {
-    max-width: 960px;
-    margin: 0 auto; 
-    background-color: blue;
-
-}
-
-.wrapper {
-    background-color: blue;
-    display: grid;
-    border-radius: 7px;
-    background-color:aliceblue;
-    grid-template-columns: 50%  50%;
-    grid-template-areas: "a  a" "b c";
-
-}
-
-.join {
-grid-area: a;
-
-}
-
-.sub {
-    grid-area: b;
-    background-color:rgb(179, 203, 211);
-    
-}
-
-.why {
-    grid-area: c;
-    background-color: rgb(204, 211, 211);
-}
-
-h1 {
-    background: color 179px;
-    font-size: 26px;
-    padding-bottom: 20px;
-}
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    background: hsl(200, 50%, 90%)
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .join {
+    text-align: center;
+    background: hsl(210, 36%, 96%);
+    padding: 2rem;
+    color: hsl(213, 40%, 20%);
+  }
+  
+  .join h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .join p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    color: hsl(213, 30%, 40%);
+  }
+  
+  
+  .price {
+    display: flex;
+    flex-direction: column; 
+     }
+  
+  
+  .plan {
+    background: hsl(200, 50%, 90%);
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .plan h2 {
+    margin: 0 0 1rem;
+  }
+  
+  .plan .price {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .plan button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: hsl(230, 50%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .price button:hover {
+    background: hsl(230, 74%, 75%);
+  }
+  
+  
+  .benefits {
+    padding: 2rem;
+    background: hsl(206, 28%, 55%);
+  }
+  
+  .benefits h2 {
+    margin: 0 0 1rem;
+  }
+  
+  .benefits ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .benefits li {
+    margin: 0.5rem 0;
+  }
